@@ -46,7 +46,7 @@ int main(void)
             tot = tot+m;
         }
 
-        //divide i by ten, to lose m, alt * -1 to switch option for next digit
+        //divide i by ten, to lose m, !alt to switch option for next digit
         i = i/10;
         alt = !alt;
 
