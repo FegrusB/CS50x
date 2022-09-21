@@ -46,19 +46,10 @@ void hundCoef(string txt, float *avgLenP, float *avgSentP)
             totW++;
 
             //if sentance end char, count sentance, ignore = false, to miss space at start of new sentance
-            if (txt[x] == 63 || txt[x] == 33 || txt[x] == 46)
-            {
-                totS++;
-                ignore = true;
-            }
-
+            if (txt[x] == 63 || txt[x] == 33 || txt[x] == 46){ totS++; ignore = true;}
         }
         //if char is letter, count letter, ignore = false, to catch next sentance end
-        else if ((64 < txt[x]) && (txt[x] < 123))
-        {
-            totL++;
-            ignore = false;
-        }
+        else if ((64 < txt[x]) && (txt[x] < 123)){totL++; ignore = false;}
     }
 
     //calculate per 100 Coefficient
