@@ -22,18 +22,9 @@ int main(void)
     index = round((consts[0] * avgLen) - (consts[1] * avgSent) - consts[2]);
 
     //print output. Higher + lower edgecases, and main output.
-    if (index < 1)
-    {
-        printf("Grade Before Grade 1\n");
-    }
-    else if (index > 16)
-    {
-        printf("Grade 16+\n");
-    }
-    else
-    {
-        printf("Grade %i\n", index);
-    }
+    if (index < 1){printf("Grade Before Grade 1\n");}
+    else if (index > 16){printf("Grade 16+\n");}
+    else{printf("Grade %i\n", index);}
 }
 
 void hundCoef(string txt, float *avgLenP, float *avgSentP)
